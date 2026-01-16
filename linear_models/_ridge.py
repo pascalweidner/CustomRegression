@@ -4,7 +4,7 @@ from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 
 
 class RidgeRegression(BaseEstimator, RegressorMixin):
-    def __init__(self, alpha=0.0, fit_intercept=True):
+    def __init__(self, alpha=1.0, fit_intercept=True):
         self.fit_intercept = fit_intercept
         self.alpha = alpha
 

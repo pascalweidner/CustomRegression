@@ -51,6 +51,8 @@ class PoissonRegression(BaseEstimator, RegressorMixin):
             self.intercept_ = 0.0
             self.coef_ = coeffs
 
+        return self
+
     def predict(self, X):
         check_is_fitted(self)
         X = check_array(X)
